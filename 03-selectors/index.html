@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03-selectors</title>
+</head>
+<body>
+
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            /* padding: 70px 25px 70px 25px; */
+            padding: 70px 25px;
+        }
+        
+        .title {
+            color: #0353a4;
+            text-transform: uppercase;
+        }
+
+        .desc {
+            border: 1px solid blue;
+        }
+
+        .link {
+            border: 1px solid black;
+        }
+
+        .container {
+            border: 1px solid #CCC;
+            width: 767px;
+            margin: 0 auto;
+        }
+
+        * {
+            font-size: 20px;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .menu__item {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        #menuId {
+            background: blueviolet;
+        }
+
+        /* Комбинатор группировки */
+        .menu__first, .menu__second { 
+            font-family: fantasy;
+        }
+
+        .menu__second .menu__item {
+            list-style-position: inside;
+            list-style-type: square;
+            list-style-image: url('./picture.png');
+        }
+
+        .menu > .menu--item {
+            border: 1px solid blue;
+            background: coral;
+        }
+
+        .menu {
+
+        }
+
+        .menu.menu--third {
+            font-weight: 900;
+        }
+
+    </style>
+
+
+    <div class="card">
+        <h3 class="title">title</h3>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quidem aliquid sunt quo possimus voluptas fugit praesentium iusto placeat, officia, aliquam laudantium perspiciatis rem, error earum animi soluta nulla qui.</p>
+        <a class="link" href="#">link</a>
+    </div>
+
+    <div class="container">
+        <ul class="menu__first" id="menuId">
+            <li class="menu__item">HTML</li>
+            <li class="menu__item">CSS</li>
+            <li class="menu__item">JS</li>
+        </ul>
+        <ul class="menu__second">
+            <li class="menu__item">PHP</li>
+            <li class="menu__item">C#</li>
+            <li class="menu__item">C++</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <ul class="menu menu--third">
+            <li class="menu--item">
+                <a href="#" class="menu--link">HTML</a>
+                <ul class="submenu">
+                    <li class="menu--item"><a href="#" class="menu--link">Html2</a></li>
+                    <li class="menu--item"><a href="#" class="menu--link">html4</a></li>
+                    <li class="menu--item"><a href="#" class="menu--link">html5</a></li>
+                </ul>
+            </li>
+            <li class="menu--item"><a href="#" class="menu--link">CSS</a></li>
+            <li class="menu--item"><a href="#" class="menu--link">JS</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

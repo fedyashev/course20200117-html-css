@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+.container  {
+    width: 768px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    border: 2px solid green;
+}
+
+.card__text {
+    border: 4px solid blue;
+}
+
+.card__text--relative {
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+
+.card--relative {
+    position: relative;
+}
+
+.card__text--absolute {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.card__text--fixed {
+    position: fixed;
+    top: 100px;
+    left: 150px;
+    border: 1px solid cyan;
+    background: darkgoldenrod;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
+
+.littlebox {
+
+}
+
+.bigbox {
+    margin: 50px;
+    margin: 20px 40px;
+    margin: 5px 10px 15px 20px;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* padding */
+}
+

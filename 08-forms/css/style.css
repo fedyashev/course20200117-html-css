@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+}
+
+.form--text {
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.form--password {
+    border: none;
+    background: #5181b8;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px;
+    color: #FFFFFF;
+}
+
+.form--submit {
+
+}

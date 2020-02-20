@@ -1,0 +1,38 @@
+:root {
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 768px;
+    margin: 0 auto;
+}
+
+.banner {
+    padding-top: 190px;
+    padding-bottom: 190px;
+    background: linear-gradient(to top, #082888, #0b4bec);
+}
+
+.banner--text {
+
+}
+
+.banner--title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
